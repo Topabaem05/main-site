@@ -39,28 +39,18 @@ section h1 {
 }
 
 .card{
-  margin: 15px;
-  display: inline;
-  top: -450px;
-  left: 35%;
   position: relative;
-  border-radius: 20%;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.26);
   overflow: hidden;
-  width:100px;
-  height:100px;
-  transition: 0.1s;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 26);
-  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  max-width: 180px;
 }
-.card-1{
-  width:100px;
-  height:100px;
-}
-.card-2{
-  width:100px;
-  height:100px;
-}
-.card-3{
-  width:100px;
-  height:100px;
+
+.con{
+  text-align: center;
+  margin-top: 200px;
 }
