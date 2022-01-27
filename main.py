@@ -1,8 +1,15 @@
-#from indeed import get_jobs as get_indeed_jobs
-from sof import get_jobs as get_sof_jobs
-from save import save_to_file
+from re import search
+from main import Flask, render_template, request
 
-sof_jobs = get_sof_jobs()
-#indeed_jobs = get_indeed_jobs()
-jobs = sof_jobs
-save_to_file(jobs)
+app = Flask("web")
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/report")
+def report():
+    word = request.args.get('word')
+    return render_template("report.html",searchingBy=word, potato="sexy")
+
+app.run(host="0.0.0.0")
