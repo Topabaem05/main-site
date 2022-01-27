@@ -9,7 +9,7 @@ def home():
 
 @app.route("/report")
 def report():
-    word = request.args.get('word')
+    word = request.arg.get('word')
     return render_template("report.html",searchingBy=word, potato="sexy")
 
 app.run(host="0.0.0.0")
