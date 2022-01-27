@@ -52,3 +52,15 @@ section h1 {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 26);
   cursor: pointer;
 }
+.card-1{
+  width:100px;
+  height:100px;
+}
+.card-2{
+  width:100px;
+  height:100px;
+}
+.card-3{
+  width:100px;
+  height:100px;
+}
