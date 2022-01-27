@@ -38,33 +38,10 @@ section h1 {
   font-size: 80px;
 }
 
-.card-1{
+.card{
+  margin: 15px;
   top: -450px;
   left: 35%;
-  position: relative;
-  border-radius: 20%;
-  overflow: hidden;
-  width:100px;
-  height:100px;
-  transition: 0.1s;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 26);
-  cursor: pointer;
-}
-.card-2{
-  top: -550px;
-  left: 45%;
-  position: relative;
-  border-radius: 20%;
-  overflow: hidden;
-  width:100px;
-  height:100px;
-  transition: 0.1s;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 26);
-  cursor: pointer;
-}
-.card-3{
-  top: -650px;
-  left: 55%;
   position: relative;
   border-radius: 20%;
   overflow: hidden;
