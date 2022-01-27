@@ -39,17 +39,16 @@ section h1 {
 }
 
 .card{
+  left: 4vh;
   text-align: center;
   position: relative;
-  border-radius: 8px;
+  border-radius: 30px;
   width: 100px;
   height: 100px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.26);
-  border-radius: 10px;
   overflow: hidden;
   display: inline-block;
   margin: 10px;
   max-width: 180px;
-  left: 36%;
   bottom: 600px
 }
