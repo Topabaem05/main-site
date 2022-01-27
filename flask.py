@@ -1,3 +1,4 @@
+from re import search
 from flask import Flask, render_template, request
 
 app = Flask("web")
@@ -9,6 +10,6 @@ def home():
 @app.route("/report")
 def report():
     word = request.args.get('word')
-    return render_template("report.html")
+    return render_template("report.html", searchingBy=word)
 
 app.run(host="0.0.0.0")
