@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request,redirect
 from scrapper import get_jobs
-app=Flask("SuperScapper") #앱 이름 
+app=Flask("SuperScapper")
 
 @app.route("/")
 def home():
@@ -14,6 +14,6 @@ def report():
   jobs=get_jobs(word)
  else:
    return redirect("/") 
- return render_template("template/report.html")
+ return render_template("report.html")
 
 app.run(host="0.0.0.0") 
