@@ -4,7 +4,7 @@ app=Flask("SuperScapper") #앱 이름
 
 @app.route("/")
 def home():
-  return render_template("indexing.html")
+  return render_template("index.html")
 
 @app.route("/report")
 def report():
@@ -14,6 +14,6 @@ def report():
   jobs=get_jobs(word)
  else:
    return redirect("/") 
- return render_template("report.html",searchingBy=word)
+ return render_template("report.html")
 
 app.run(host="0.0.0.0") 
