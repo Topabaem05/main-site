@@ -15,5 +15,5 @@ def report():
  else:
    return redirect("/") 
  return render_template("report.html")
-
-app.run(host="120.0.0.7") 
+ 
+app.run(host="0.0.0.0") 
