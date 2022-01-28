@@ -5,7 +5,7 @@ app = Flask("Flask")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("home.html")
 
 
 @app.route("/report")
@@ -13,7 +13,7 @@ def report():
     word = request.args.get("word")
 
     return render_template(
-      "templates/report.html",
+      "report.html",
       searchingBy = word
     )
 
