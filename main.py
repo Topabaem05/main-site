@@ -13,7 +13,7 @@ def report():
     word = request.args.get("word")
 
     return render_template(
-      "report.html",
+      "templates/report.html",
       searchingBy = word
     )
 
