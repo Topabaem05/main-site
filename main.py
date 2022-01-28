@@ -4,7 +4,7 @@ app=Flask("SuperScapper") #앱 이름
 
 @app.route("/")
 def home():
-  return render_template("potato.html")
+  return render_template("index.html")
 
 @app.route("/report")
 def report():
