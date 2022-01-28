@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
 def get_last_page(url):
   result=requests.get(url)
   soup=BeautifulSoup(result.text,"html.parser")
@@ -34,6 +33,7 @@ def extract_jobs(last_page,url):
       jobs.append(job)
   return jobs    
       
+
 def get_jobs(word):
   url=f"https://stackoverflow.com/jobs?q={word}"
   last_page=get_last_page(url)
