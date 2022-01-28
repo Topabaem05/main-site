@@ -14,6 +14,6 @@ def report():
   jobs=get_jobs(word)
  else:
    return redirect("/") 
- return render_template("report.html")
+ return render_template("template/report.html")
 
 app.run(host="0.0.0.0") 
