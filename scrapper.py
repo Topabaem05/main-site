@@ -7,8 +7,7 @@ def get_last_page(url):
   soup=BeautifulSoup(result.text,"html.parser")
   pages=soup.find("div",{"class":"s-pagination"}).find_all("a")
   last_page=pages[-2].get_text(strip=True)
-  return int(last_page) #아래 extract_jobs에서 range함수를 사용하기 위해 정수형 변환
-
+  return int(last_page)
 
 
 def extract_job(html):
